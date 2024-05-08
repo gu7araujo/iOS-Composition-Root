@@ -21,6 +21,8 @@
 		B7C73D072BEBE0790098FA6E /* MainModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C73D062BEBE0790098FA6E /* MainModuleViewModel.swift */; };
 		B7C73D092BEBE0800098FA6E /* MainModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C73D082BEBE0800098FA6E /* MainModuleViewController.swift */; };
 		B7C73D0B2BEBE0860098FA6E /* MainModuleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C73D0A2BEBE0860098FA6E /* MainModuleCoordinator.swift */; };
+		B7C73D0D2BEBE70D0098FA6E /* CompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C73D0C2BEBE70D0098FA6E /* CompositionRoot.swift */; };
+		B7C73D112BEBEA5F0098FA6E /* CompositionRoot+Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C73D102BEBEA5F0098FA6E /* CompositionRoot+Detail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		B7C73D062BEBE0790098FA6E /* MainModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleViewModel.swift; sourceTree = "<group>"; };
 		B7C73D082BEBE0800098FA6E /* MainModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleViewController.swift; sourceTree = "<group>"; };
 		B7C73D0A2BEBE0860098FA6E /* MainModuleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleCoordinator.swift; sourceTree = "<group>"; };
+		B7C73D0C2BEBE70D0098FA6E /* CompositionRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionRoot.swift; sourceTree = "<group>"; };
+		B7C73D102BEBEA5F0098FA6E /* CompositionRoot+Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CompositionRoot+Detail.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 		B7C73CDF2BEBDF170098FA6E /* CompositionRootApp */ = {
 			isa = PBXGroup;
 			children = (
+				B7C73D0C2BEBE70D0098FA6E /* CompositionRoot.swift */,
+				B7C73D102BEBEA5F0098FA6E /* CompositionRoot+Detail.swift */,
 				B7C73CF72BEBDF9B0098FA6E /* MainModule */,
 				B7C73CF62BEBDF8F0098FA6E /* DetailModule */,
 				B7C73CF52BEBDF870098FA6E /* Analytics */,
@@ -198,6 +204,8 @@
 				B7C73D072BEBE0790098FA6E /* MainModuleViewModel.swift in Sources */,
 				B7C73D012BEBE0340098FA6E /* DetailModuleViewController.swift in Sources */,
 				B7C73D092BEBE0800098FA6E /* MainModuleViewController.swift in Sources */,
+				B7C73D0D2BEBE70D0098FA6E /* CompositionRoot.swift in Sources */,
+				B7C73D112BEBEA5F0098FA6E /* CompositionRoot+Detail.swift in Sources */,
 				B7C73CF92BEBDFCF0098FA6E /* NetworkService.swift in Sources */,
 				B7C73D052BEBE0410098FA6E /* DetailModuleCoordinator.swift in Sources */,
 				B7C73D032BEBE03B0098FA6E /* DetailModuleViewModel.swift in Sources */,

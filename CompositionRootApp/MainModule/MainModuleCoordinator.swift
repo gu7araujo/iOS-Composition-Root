@@ -17,16 +17,9 @@ final class MainModuleCoordinator {
     }
     
     func start() {
-        let viewController = makeView()
+        let viewModel = CompositionRoot.mainModuleViewModel(onGoToDetailTap: pushDetail)
+        let viewController = CompositionRoot.mainModuleViewController(viewModel: viewModel)
         navigationController?.pushViewController(viewController, animated: true)
-    }
-    
-    func makeView() -> UIViewController {
-        let viewModel = MainModuleViewModel(analyticsTracker: AnalyticsEventTracker(),
-                                            networking: NetworkService.shared,
-                                            onGoToDetailTap: pushDetail)
-        let viewController = MainModuleViewcontroller(viewModel: viewModel)
-        return viewController
     }
     
     private func pushDetail() {

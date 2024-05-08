@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let navController = UINavigationController()
         navController.isNavigationBarHidden = true
-        let mainCoordinator = MainModuleCoordinator(navigationController: navController)
+        let mainCoordinator = CompositionRoot.mainModuleCoordinator(navigationController: navController)
         window.frame = UIScreen.main.bounds
         window.makeKeyAndVisible()
         window.rootViewController = navController
