@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7C4715E2C0507CC00F5B621 /* CompositionRootTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C4715D2C0507CC00F5B621 /* CompositionRootTests.swift */; };
 		B7C73CE12BEBDF170098FA6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C73CE02BEBDF170098FA6E /* AppDelegate.swift */; };
 		B7C73CE32BEBDF170098FA6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C73CE22BEBDF170098FA6E /* SceneDelegate.swift */; };
 		B7C73CEA2BEBDF190098FA6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7C73CE92BEBDF190098FA6E /* Assets.xcassets */; };
@@ -25,7 +26,19 @@
 		B7C73D112BEBEA5F0098FA6E /* CompositionRoot+Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C73D102BEBEA5F0098FA6E /* CompositionRoot+Detail.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B7C4715F2C0507CC00F5B621 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7C73CD52BEBDF170098FA6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7C73CDC2BEBDF170098FA6E;
+			remoteInfo = CompositionRootApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		B7C4715B2C0507CC00F5B621 /* CompositionRootAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompositionRootAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C4715D2C0507CC00F5B621 /* CompositionRootTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionRootTests.swift; sourceTree = "<group>"; };
 		B7C73CDD2BEBDF170098FA6E /* CompositionRootApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompositionRootApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C73CE02BEBDF170098FA6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7C73CE22BEBDF170098FA6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +60,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B7C471582C0507CC00F5B621 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7C73CDA2BEBDF170098FA6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,10 +77,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B7C4715C2C0507CC00F5B621 /* CompositionRootAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7C4715D2C0507CC00F5B621 /* CompositionRootTests.swift */,
+			);
+			path = CompositionRootAppTests;
+			sourceTree = "<group>";
+		};
 		B7C73CD42BEBDF170098FA6E = {
 			isa = PBXGroup;
 			children = (
 				B7C73CDF2BEBDF170098FA6E /* CompositionRootApp */,
+				B7C4715C2C0507CC00F5B621 /* CompositionRootAppTests */,
 				B7C73CDE2BEBDF170098FA6E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				B7C73CDD2BEBDF170098FA6E /* CompositionRootApp.app */,
+				B7C4715B2C0507CC00F5B621 /* CompositionRootAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +162,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B7C4715A2C0507CC00F5B621 /* CompositionRootAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7C471632C0507CC00F5B621 /* Build configuration list for PBXNativeTarget "CompositionRootAppTests" */;
+			buildPhases = (
+				B7C471572C0507CC00F5B621 /* Sources */,
+				B7C471582C0507CC00F5B621 /* Frameworks */,
+				B7C471592C0507CC00F5B621 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7C471602C0507CC00F5B621 /* PBXTargetDependency */,
+			);
+			name = CompositionRootAppTests;
+			productName = CompositionRootAppTests;
+			productReference = B7C4715B2C0507CC00F5B621 /* CompositionRootAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B7C73CDC2BEBDF170098FA6E /* CompositionRootApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7C73CF12BEBDF190098FA6E /* Build configuration list for PBXNativeTarget "CompositionRootApp" */;
@@ -159,6 +207,10 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					B7C4715A2C0507CC00F5B621 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = B7C73CDC2BEBDF170098FA6E;
+					};
 					B7C73CDC2BEBDF170098FA6E = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -178,11 +230,19 @@
 			projectRoot = "";
 			targets = (
 				B7C73CDC2BEBDF170098FA6E /* CompositionRootApp */,
+				B7C4715A2C0507CC00F5B621 /* CompositionRootAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B7C471592C0507CC00F5B621 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7C73CDB2BEBDF170098FA6E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,6 +255,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B7C471572C0507CC00F5B621 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7C4715E2C0507CC00F5B621 /* CompositionRootTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7C73CD92BEBDF170098FA6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +286,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B7C471602C0507CC00F5B621 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7C73CDC2BEBDF170098FA6E /* CompositionRootApp */;
+			targetProxy = B7C4715F2C0507CC00F5B621 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		B7C73CEB2BEBDF190098FA6E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -230,6 +306,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B7C471612C0507CC00F5B621 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHBH6Q62PG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CompositionRootAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CompositionRootApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CompositionRootApp";
+			};
+			name = Debug;
+		};
+		B7C471622C0507CC00F5B621 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHBH6Q62PG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CompositionRootAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CompositionRootApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CompositionRootApp";
+			};
+			name = Release;
+		};
 		B7C73CEF2BEBDF190098FA6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -282,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -339,7 +453,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -356,6 +470,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHBH6Q62PG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CompositionRootApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -363,6 +478,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +499,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RHBH6Q62PG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CompositionRootApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -390,6 +507,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,6 +524,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B7C471632C0507CC00F5B621 /* Build configuration list for PBXNativeTarget "CompositionRootAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7C471612C0507CC00F5B621 /* Debug */,
+				B7C471622C0507CC00F5B621 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B7C73CD82BEBDF170098FA6E /* Build configuration list for PBXProject "CompositionRootApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
